@@ -26,7 +26,7 @@ $ ./create-basic-configdrive-with-static-ip.sh -H ${HOSTNAME} -S ~/.ssh/id_rsa.p
 * Login CoreOS VM.
 
 ```bash
-$ ssh -i ~/.ssh/id_rsa.pub core@${HOSTNAME}
+$ ssh -i ~/.ssh/id_rsa.pub core@${IPADDR}
 ```
 
 ## Post-Installation
