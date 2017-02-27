@@ -8,12 +8,11 @@ https://discovery.etcd.io/new?size=3
 ```
 * CoreOS cloud-config ISO
 ```bash
+# yum install -y mkisofs
 $ ssh-keygen
 $ wget https://raw.github.com/coreos/scripts/master/contrib/create-basic-configdrive
-$ vi create-basic-configdrive
-  - Edit TOKEN in DEFAULT_ETCD_DISCOVERY="https://discovery.etcd.io/TOKEN"
 $ chmod +x create-basic-configdrive
-$ ./create-basic-configdrive -H coreos1 -S ~/.ssh/id_rsa.pub
+$ ./create-basic-configdrive -H coreos1 -S ~/.ssh/id_rsa.pub -t ${TOKEN}
 ```
 
 ## Installation
