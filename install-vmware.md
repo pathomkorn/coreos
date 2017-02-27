@@ -10,9 +10,9 @@ https://discovery.etcd.io/new?size=3
 ```bash
 # yum install -y mkisofs
 $ ssh-keygen
-$ wget https://raw.github.com/coreos/scripts/master/contrib/create-basic-configdrive
+$ wget https://raw.githubusercontent.com/pathomkorn/coreos/master/create-basic-configdrive-with-static-ip.sh
 $ chmod +x create-basic-configdrive
-$ ./create-basic-configdrive -H ${HOSTNAME} -S ~/.ssh/id_rsa.pub -t ${TOKEN}
+$ ./create-basic-configdrive-with-static-ip.sh -H ${HOSTNAME} -S ~/.ssh/id_rsa.pub -t ${TOKEN} -1 ens192 -2 ${IPADDR}/${PREFIX} -3 ${GATEWAY} -4 ${DNSSERVER}
 ```
 
 ## Installation
@@ -21,7 +21,7 @@ $ ./create-basic-configdrive -H ${HOSTNAME} -S ~/.ssh/id_rsa.pub -t ${TOKEN}
 * Deploy OVA without power on.
   * Do not configure OVA.
   * OVA configuration done from CoreOS cloud-config ISO.
-* Insert CoreOS cloud-config ISO.
+* Insert CoreOS cloud-config ISO which built on pre-installation step.
 * Power on VM.
 * Login CoreOS VM.
 
