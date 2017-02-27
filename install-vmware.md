@@ -12,7 +12,7 @@ https://discovery.etcd.io/new?size=3
 $ ssh-keygen
 $ wget https://raw.github.com/coreos/scripts/master/contrib/create-basic-configdrive
 $ chmod +x create-basic-configdrive
-$ ./create-basic-configdrive -H coreos1 -S ~/.ssh/id_rsa.pub -t ${TOKEN}
+$ ./create-basic-configdrive -H ${HOSTNAME} -S ~/.ssh/id_rsa.pub -t ${TOKEN}
 ```
 
 ## Installation
@@ -26,7 +26,7 @@ $ ./create-basic-configdrive -H coreos1 -S ~/.ssh/id_rsa.pub -t ${TOKEN}
 * Login CoreOS VM.
 
 ```bash
-$ ssh -i ~/.ssh/id_rsa.pub core@coreos1
+$ ssh -i ~/.ssh/id_rsa.pub core@${HOSTNAME}
 ```
 
 ## Post-Installation
