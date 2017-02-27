@@ -2,7 +2,7 @@
 
 ## Pre-Installation
 * DHCP server
-* Get CoreOS etcd discovery token from
+* Get CoreOS etcd discovery token
 ```bash
 https://discovery.etcd.io/new?size=3
 ```
@@ -17,9 +17,11 @@ $ ./create-basic-configdrive -H coreos1 -S ~/.ssh/id_rsa.pub
 ```
 
 ## Installation
-* Download latest CoreOS stable OVA
+* Download latest CoreOS stable OVA.
   * https://stable.release.core-os.net/amd64-usr/current/coreos_production_vmware_ova.ova
-* Deploy OVA without power on. You do not have to configure OVA.
+* Deploy OVA without power on.
+  * Do not configure OVA.
+  * OVA configuration done from CoreOS cloud-config ISO.
 * Insert CoreOS cloud-config ISO.
 * Power on VM.
 * Login CoreOS VM.
@@ -30,6 +32,6 @@ $ ssh -i ~/.ssh/id_rsa.pub core@coreos1
 
 ## Post-Installation
 * Reconfigure CoreOS
-  * Power off
-  * Insert new CoreOS cloud-config ISO
-  * Power on
+  * Power off.
+  * Insert new CoreOS cloud-config ISO.
+  * Power on.
