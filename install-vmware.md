@@ -1,7 +1,6 @@
 # Install CoreOS on VMware
 
 ## Pre-Installation
-* DHCP server
 * Get CoreOS etcd discovery token
 ```bash
 https://discovery.etcd.io/new?size=3
