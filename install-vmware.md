@@ -1,4 +1,4 @@
-# Install CoreOS on VMware vCenter
+# Install CoreOS on VMware
 ## Prerequisites
 * DHCP server
 * CoreOS cloud-config ISO
