@@ -1,2 +1,1 @@
-# coreos
 My CoreOS Blackboard
