@@ -10,8 +10,8 @@ https://discovery.etcd.io/new?size=3
 # yum install -y mkisofs
 $ ssh-keygen
 $ wget https://raw.githubusercontent.com/pathomkorn/coreos/master/create-configdrive-with-proxy.sh
-$ chmod +x create-basic-configdrive
-$ ./create-basic-configdrive-with-static-ip.sh -H ${HOSTNAME} -S ~/.ssh/id_rsa.pub -t ${TOKEN} -1 ens192 -2 ${IPADDR}/${PREFIX} -3 ${GATEWAY} -4 ${DNSSERVER}
+$ chmod +x create-configdrive-with-proxy.sh
+$ ./create-configdrive-with-proxy.sh -H ${HOSTNAME} -S ~/.ssh/id_rsa.pub -t ${TOKEN} -1 ens192 -2 ${IPADDR}/${PREFIX} -3 ${GATEWAY} -4 ${DNSSERVER}
 ```
 
 ## Installation
